@@ -122,6 +122,8 @@ Headroom.js can also accept an options object to alter the way it behaves. You c
 {
     // vertical offset in px before element is first unpinned
     offset : 0,
+    // vertical offset in px for second point before element is first unpinned
+    offsetTwo : 200,
     // scroll tolerance in px before state changes
     tolerance : 0,
     // or scroll tolerance per direction
@@ -140,7 +142,11 @@ Headroom.js can also accept an options object to alter the way it behaves. You c
         // when above offset
         top : "headroom--top",
         // when below offset
-        notTop : "headroom--not-top"
+        notTop : "headroom--not-top",
+        // when above second offset
+        topTwo : "headroom--top-TWO",
+        // when below second offset
+        notTopTwo : "headroom--not-top-TWO"
     },
     // callback when pinned, `this` is headroom object
     onPin : function() {},
